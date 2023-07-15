@@ -4,13 +4,7 @@
 #include <string.h>
 int extraMemoryAllocated;
 
-// implements heap sort
-// extraMemoryAllocated counts bytes of memory allocated
 
-
-
-// implement merge sort
-// extraMemoryAllocated counts bytes of extra memory allocated
 void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
@@ -157,13 +151,13 @@ void printArray(int pData[], int dataSz)
 {
 	int i, sz = dataSz - 100;
 	printf("\tData:\n\t");
-	for (i=0;i<100;++i)
+	for (i=0;i<((dataSz>100) ? 100:dataSz);++i)
 	{
 		printf("%d ",pData[i]);
 	}
 	printf("\n\t");
 	
-	for (i=sz;i<dataSz;++i)
+	for (i=((sz>0) ? sz:0);i<dataSz;++i)
 	{
 		printf("%d ",pData[i]);
 	}
