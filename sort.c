@@ -4,13 +4,7 @@
 #include <string.h>
 int extraMemoryAllocated;
 
-// implements heap sort
-// extraMemoryAllocated counts bytes of memory allocated
 
-
-
-// implement merge sort
-// extraMemoryAllocated counts bytes of extra memory allocated
 void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
